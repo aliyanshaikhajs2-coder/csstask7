@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #555;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    min-height: 580px;
+}
+
+.sidebar {
+    background-color: #666;
+    color: white;
+    width: 18%;
+    padding: 20px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.sidebar h2 {
+    margin-bottom: 5px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.content {
+    background-color: white;
+    width: 82%;
+    padding: 25px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+.sticky-box {
+    background-color: #ddd;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    top: 120px;
+    z-index: 5;
+}
+
+.sticky-box h3 {
+    font-size: 16px;
+}
+
+.sticky-box p {
+    font-size: 12px;
+}
+
+.box1 {
+    background-color: coral;
+    color: white;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 {
+    background-color: lightblue;
+    width: 200px;
+    height: 140px;
+    padding: 15px;
+    position: absolute;
+    top: 130px;
+    left: 40px;
+    border-radius: 5px;
+}
+
+.box2 h3 {
+    font-size: 16px;
+}
+
+.box2 p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.image {
+    background-color: #d6d3d6;
+    height: 140px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    font-size: 22px;
+}
+
+/* Floating Buttons */
+.floating-buttons {
+    position: fixed;
+    right: 15px;
+    bottom: 30px;
+    z-index: 20;
+}
+
+.floating-buttons div {
+    background-color: #666;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
